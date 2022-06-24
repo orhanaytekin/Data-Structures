@@ -50,4 +50,13 @@ public class ModLinkedList {
         root.next = toAdd;
         root = temp;
     }
+
+    //add node at the start of the list
+    // (EXTRA) ***add all the items from another list by using this O(1) constant time
+    // and you get a LinkedList with reverse order of the original list***
+    public void AddFirst(int d){
+        Node temp = root;
+        root = new Node(d);
+        root.next = temp;
+    }
 }
